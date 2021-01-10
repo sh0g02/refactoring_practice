@@ -32,7 +32,7 @@ class Customer
       # レンタルポイント加算
       frequent_renter_points += 1
 
-      # 新作2日間レンタルで、ボーナス店加算
+      # 新作2日間レンタルで、ボーナス点加算
       if element.movie.price_code == Movie::NEW_RELEASE && element.days_rented > 1
         frequent_renter_points += 1
       end
